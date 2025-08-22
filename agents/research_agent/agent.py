@@ -21,6 +21,16 @@ root_agent = Agent(
             ]
           )
         )
+      ),
+      MCPToolset(
+        connection_params = StdioConnectionParams(
+          server_params = StdioServerParameters(
+            command="uvx",
+            args=[
+              "pubmedmcp@latest"
+            ]
+          )
+        )
       )
     ],
 )
